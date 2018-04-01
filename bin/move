@@ -11,3 +11,12 @@ input = gets.strip
 index = input_to_index(input)
 move(board, index)
 display_board(board)
+
+def input_to_index(input)
+  input_int = input.to_i
+  input_int = input_int-1;
+end
+
+def move(board, index, character = "X")
+  board[index] = character;
+end
